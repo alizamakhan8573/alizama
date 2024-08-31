@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohd Ali Zama Khan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Ovo&display=swap" rel="stylesheet">
+    <style>
+        /* Add any custom styles here */
+    </style>
+</head>
+<body class="overflow-x-hidden font-Outfit dark:bg-darkTheme dark:text-white">
+    <nav class="w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50">
+        <img src="./IMG/Black & White Minimalist Business Logo.png" alt="logo" class="w-28 cursor-pointer mr-14">
+        <ul class="hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 font-Ovo">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            <a href="#contact" class="hidden lg:flex items-center gap-3 px-10 py-2.5 border border-gray-500 rounded-full ml-4">Contact</a>
+            <button class="block md:hidden ml-3" onclick="openMenu()">
+                <img src="./IMG/settings_13958324__1_-removebg-preview.png" alt="" class="w-6">
+            </button>
+        </div>
+    
+        <!-- Mobile menu -->
+        <ul id="sideMenu" class="flex md:hidden flex-col gap-4 py-20 px-10 fixed -right-64 top-0 bottom-0 w-64 z-50 h-screen bg-rose-50 transition duration-500">
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <img src="./IMG/cross_14875490-removebg-preview.png" alt="" class="w-5 cursor-pointer">
+            </div>
+            <li><a href="#top" onclick="closeMenu()"> Home</a></li>
+            <li><a href="#about" onclick="closeMenu()">About me</a></li>
+            <li><a href="#services" onclick="closeMenu()">Services</a></li>
+            <li><a href="#work" onclick="closeMenu()">My Work</a></li>
+            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <!-- Header -->
+    <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+        <img src="./IMG/Screenshot (21).png" alt="Profile" class="rounded-full w-32">
+        <h3 class="flex items-end gap-2 text-xl md:text-2xl mb-3">Hi! I'm Mohd Ali Zama Khan <img src="./IMG/wave_9437514-removebg-preview.png" alt="" class="w-6"></h3>
+        <h1 class="text-3xl sm:text-6xl lg:text-[45px]">WEB DEVELOPER</h1>
+        <p class="max-w-2xl mx-auto">I specialize in creating engaging web interfaces using HTML5, CSS3, and JavaScript (ES6+), along with React.js for dynamic user experiences. I am skilled in integrating front-end and back-end services, utilizing RESTful APIs.</p>
+        <div class="flex flex-col sm:flex-row items-center gap-4 mt-4">
+            <a href="#contact" class="px-10 py-3 border rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white flex items-center gap-2">
+                Contact Me 
+                <img src="./IMG/phone_1925367-removebg-preview.png" alt="Arrow pointing right" class="w-4">
+            </a>
+            <a href="#contact" class="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2 bg-white">
+                My Resume 
+                <img src="./IMG/download_10067838-removebg-preview.png" alt="Download icon" class="w-4">
+            </a>
+        </div>
+    </div>
+
+    <!-- About Me -->
+    <div id="about" class="w-full px-[1%] py-10 scroll-mt-20">
+        <h2 class="text-center text-5xl">About Me</h2>
+        <div class="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
+            <div class="max-w-max mx-auto relative">
+                <img src="./IMG/WhatsApp_Image_2024-08-29_at_9.55.19_PM-removebg-preview (1).png" alt="" class="w-64 sm:w-80 rounded-3xl max-w-none">
+            </div>
+            <div class="flex-1">
+                <p class="mb-6">I'm Mohd. Ali Zama Khan, a passionate Web Developer with a strong foundation in the MERN stack. I have honed my skills in creating dynamic, responsive web applications. I specialize in front-end development to craft user-friendly interfaces. My experience extends to backend development for efficient data management. I take pride in my ability to optimize applications for performance and enhance overall user satisfaction. I'm driven by a desire to create innovative solutions that make a difference, and I'm always eager to take on new challenges in the ever-evolving world of web development.</p>
+                <ul class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-2xl">
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[lightHover] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./IMG/discussion_5486584-removebg-preview.png" alt="Languages Icon" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Languages</h3>
+                        <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[lightHover] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./IMG/briefing_1705213-removebg-preview.png" alt="Projects Icon" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Projects</h3>
+                        <p class="text-gray-600 text-sm">Developed a diverse range of digital platforms.</p>
+                    </li>
+                    <li class="border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer hover:bg-[lightHover] hover:translate-y-1 duration-500 hover:shadow-[4px_4px_0_#000]">
+                        <img src="./IMG/education_3976555-removebg-preview.png" alt="Education Icon" class="w-7 mt-3">
+                        <h3 class="my-4 font-semibold text-gray-700">Education</h3>
+                        <p class="text-gray-600 text-sm">Bachelor of Computer Application, Integral University</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div id="services" class="w-full px-4 sm:px-[6%] lg:px-[12%] py-10 scroll-mt-20">
+    <h2 class="text-center text-5xl ">My Services</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 my-10">
+        <div class="border border-gray-400 rounded-lg px-6 py-10 sm:px-8 sm:py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"> 
+            <img src="./IMG/world-wide-web_1927656-removebg-preview.png" alt="" class="w-10 mx-auto"> 
+            <h3 class="text-lg my-4 text-gray-700 text-center">Custom Website Development</h3> 
+            <p class="text-sm text-gray-600 leading-5 text-center">Building tailored websites from scratch based on client requirements...</p> 
+            <a href="#" class="flex items-center justify-center gap-2 text-sm mt-5 text-blue-500">Read more 
+                <img src="./IMG/arrow-removebg-preview.png" alt="" class="w-4">
+            </a>
+        </div>
+
+        <div class="border border-gray-400 rounded-lg px-6 py-10 sm:px-8 sm:py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"> 
+            <img src="./IMG/internet_16079080-removebg-preview.png" alt="" class="w-10 mx-auto"> 
+            <h3 class="text-lg my-4 text-gray-700 text-center">E-commerce Solutions</h3> 
+            <p class="text-sm text-gray-600 leading-5 text-center">Developing online stores with payment gateway integration, product management, and user-friendly interfaces...</p> 
+            <a href="#" class="flex items-center justify-center gap-2 text-sm mt-5 text-blue-500">Read more 
+                <img src="./IMG/arrow-removebg-preview.png" alt="" class="w-4">
+            </a>
+        </div>
+
+        <div class="border border-gray-400 rounded-lg px-6 py-10 sm:px-8 sm:py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"> 
+            <img src="./IMG/seo_2977742-removebg-preview.png" alt="" class="w-10 mx-auto"> 
+            <h3 class="text-lg my-4 text-gray-700 text-center">Search Engine Optimization</h3> 
+            <p class="text-sm text-gray-600 leading-5 text-center">Optimizing websites for better search engine rankings, including on-page SEO and performance enhancements...</p> 
+            <a href="#" class="flex items-center justify-center gap-2 text-sm mt-5 text-blue-500">Read more 
+                <img src="./IMG/arrow-removebg-preview.png" alt="" class="w-4">
+            </a>
+        </div>
+
+        <div class="border border-gray-400 rounded-lg px-6 py-10 sm:px-8 sm:py-12 hover:shadow-[4px_4px_0_#000] cursor-pointer hover:bg-[#fcf4ff] hover:-translate-y-1 duration-500"> 
+            <img src="./IMG/high-performance_17352611-removebg-preview.png" alt="" class="w-10 mx-auto"> 
+            <h3 class="text-lg my-4 text-gray-700 text-center">Performance Optimization</h3> 
+            <p class="text-sm text-gray-600 leading-5 text-center">Improving website speed, load times, and overall performance for a better user experience...</p> 
+            <a href="#" class="flex items-center justify-center gap-2 text-sm mt-5 text-blue-500">Read more 
+                <img src="./IMG/arrow-removebg-preview.png" alt="" class="w-4">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- my work --> 
+
+<div>
+    <div id="work" class="w-full px-4 sm:px-[6%] lg:px-[12%] py-10 scroll-mt-20">
+        <h2 class="text-center text-3xl sm:text-4xl lg:text-5xl">My Work</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 my-10 gap-5">
+
+            <a href="ecommerce.html" class="aspect-square bg-[url('./IMG/E-comm.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white bg-opacity-80 w-11/12 sm:w-10/12 rounded-md absolute bottom-5 left-1/2 transform -translate-x-1/2 py-3 px-4 sm:px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold text-sm sm:text-base lg:text-lg">E-commerce</h2>
+                        <p class="text-xs sm:text-sm text-gray-700">MERN Stack</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="./IMG/arrow-removebg-preview.png" alt="Send Icon" class="w-4 sm:w-5">
+                    </div>
+                </div>
+            </a>
+
+            <a href="food-delivery.html" class="aspect-square bg-[url('./IMG/Food%20Delivary.jpg')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white bg-opacity-80 w-11/12 sm:w-10/12 rounded-md absolute bottom-5 left-1/2 transform -translate-x-1/2 py-3 px-4 sm:px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold text-sm sm:text-base lg:text-lg">Food Delivery</h2>
+                        <p class="text-xs sm:text-sm text-gray-700">MERN Stack</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="./IMG/arrow-removebg-preview.png" alt="Send Icon" class="w-4 sm:w-5">
+                    </div>
+                </div>
+            </a>
+
+            <a href="blog-app.html" class="aspect-square bg-[url('./IMG/blog-removebg-preview.png')] bg-no-repeat bg-cover bg-center rounded-lg relative cursor-pointer group">
+                <div class="bg-white bg-opacity-80 w-11/12 sm:w-10/12 rounded-md absolute bottom-5 left-1/2 transform -translate-x-1/2 py-3 px-4 sm:px-5 flex items-center justify-between duration-500 group-hover:bottom-7">
+                    <div>
+                        <h2 class="font-semibold text-sm sm:text-base lg:text-lg">Blog App</h2>
+                        <p class="text-xs sm:text-sm text-gray-700">MERN Stack</p>
+                    </div>
+                    <div class="border rounded-full border-black w-9 aspect-square flex items-center justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition">
+                        <img src="./IMG/arrow-removebg-preview.png" alt="Send Icon" class="w-4 sm:w-5">
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Show More Button -->
+        <div class="flex justify-center">
+            <a href="#" class="flex items-center justify-center gap-2 text-gray-700 border border-gray-700 rounded-full py-3 px-10 hover:bg-[#fcf4ff] hover:text-[#fc5185] duration-500">
+                Show more 
+                <img src="./IMG/arrow-removebg-preview.png" alt="Right Arrow" class="w-4">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact Us -->
+<div id="contact" class="w-full max-w-md md:max-w-lg lg:max-w-2xl xl:max-w-3xl mx-auto mt-10 px-4 sm:px-6 lg:px-8 mb-12">
+    <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-8">Contact Us</h2>
+    <form action="https://api.web3forms.com/submit" method="POST" class="bg-white shadow-md rounded-lg px-4 sm:px-8 pt-6 pb-8 mb-4">
+        <input type="hidden" name="access_key" value="244c7b53-7812-45f7-b603-120c6748dff7">
+
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm sm:text-base font-bold mb-2" for="name">
+                Name
+            </label>
+            <input class="shadow appearance-none border rounded-lg w-full py-2 sm:py-3 px-3 sm:px-4 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-300" id="name" type="text" placeholder="Your Name" name="name" required>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm sm:text-base font-bold mb-2" for="email">
+                Email
+            </label>
+            <input class="shadow appearance-none border rounded-lg w-full py-2 sm:py-3 px-3 sm:px-4 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-300" id="email" type="email" placeholder="Your Email" name="email" required>
+        </div>
+
+        <div class="mb-4">
+            <label class="block text-gray-700 text-sm sm:text-base font-bold mb-2" for="subject">
+                Subject
+            </label>
+            <input class="shadow appearance-none border rounded-lg w-full py-2 sm:py-3 px-3 sm:px-4 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-300" id="subject" type="text" placeholder="Subject" name="subject">
+        </div>
+
+        <div class="mb-6">
+            <label class="block text-gray-700 text-sm sm:text-base font-bold mb-2" for="message">
+                Message
+            </label>
+            <textarea class="shadow appearance-none border rounded-lg w-full py-2 sm:py-3 px-3 sm:px-4 text-gray-700 leading-tight focus:outline-none focus:ring focus:border-blue-300 h-24 sm:h-32 resize-none" id="message" placeholder="Your message..." name="message" required></textarea>
+        </div>
+
+        <div class="flex justify-center">
+            <button class="px-10 py-3 border-none rounded-full bg-gradient-to-r from-[#b820e6] to-[#da7d20] text-white hover:opacity-90 transition-opacity duration-300 ease-in-out flex items-center gap-2" type="submit">
+                Send Message
+            </button>
+        </div>
+    </form>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="gap-4">
+        <div class="text-center">
+            <img src="./IMG/Black & White Minimalist Business Logo.png" alt="logo" class="w-24 mx-auto mb-2" >
+            <div class="w-max flex items-center gap-2 mx-auto">
+                <img src="./IMG/email-removebg-preview.png" alt="Mail Icon" class="w-6">
+                <span>alizamakhan8573@gmail.com</span>
+            </div>
+        </div>
+        <div class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] my-12 py-6">
+            <p>&copy; 2024 Mohd Ali Zama Khan. All rights reserved.</p>
+            <ul class="flex items-center gap-10 justify-center mt-4 sm:mt-0">
+                <li><a href="https://github.com/alizamakhan8573" class="hover:text-gray-400">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/ali-zama-khan-441862317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="hover:text-gray-400">LinkedIn</a></li>
+                <li><a href="https://www.instagram.com/zama_alii/" class="hover:text-gray-400">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
